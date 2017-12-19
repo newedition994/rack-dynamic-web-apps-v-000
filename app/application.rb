@@ -6,7 +6,11 @@ class Application
     num_1 = Kernel.rand(1..20)
     num_2 = Kernel.rand(1..20)
     num_3 = Kernel.rand(1..20)
-    resp.write "Hello, World"
+
+    if num_1==num_2 && num_2==num_3
+      resp.write
+    end
+
     resp.finish
   end
 
